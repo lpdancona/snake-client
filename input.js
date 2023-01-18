@@ -34,6 +34,16 @@ const Input = {
       conn.write("Move: rigth");
       // });
     }
+    if (data === "e") {
+      // connect.on("data", () => {
+      conn.write("Say: you suck!");
+      // });
+    }
+    if (data === "q") {
+      // connect.on("data", () => {
+      conn.write("Say: i'm the best");
+      // });
+    }
   },
 };
 Input.setupInput();
