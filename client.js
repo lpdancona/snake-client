@@ -4,7 +4,12 @@ const connect = function () {
     host: "165.227.47.243",
     port: 50541,
   });
-
+  conn.on("connect", () => {
+    conn.write("Name: Leo");
+  });
+  conn.on("connect", () => {
+    console.log("Successfully connected to game server");
+  });
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
